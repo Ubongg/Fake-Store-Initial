@@ -1,30 +1,11 @@
 import React from "react";
 import Product from "./Product";
 import { useState, useEffect } from "react";
-
-const url = "https://fakestoreapi.com/products";
+import { useGlobalContext } from "../context";
 
 const ProductList = () => {
-  const [data, setData] = useState([]);
-  const [filter, setFilter] = useState(data);
-  const [loading, setLoading] = useState(false);
-  let componentMounted = true;
-
-  useEffect(() => {
-    const getProducts = async () => {
-      setLoading(true);
-      const response = await fetch(url);
-      if (componentMounted) {
-        setData(await response.clone().json());
-        setFilter(await response.json());
-        setLoading(false);
-      }
-      return () => {
-        componentMounted = false;
-      };
-    };
-    getProducts();
-  }, []);
+  const { data, filter, setFilter, loading, setLoading, setData } =
+    useGlobalContext();
 
   if (loading) {
     return <div className="loading">Loading...</div>;

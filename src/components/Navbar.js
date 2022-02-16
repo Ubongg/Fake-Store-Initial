@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/yubo2.png";
 import { FaBars } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 import { links, social } from "../data";
 
@@ -33,8 +34,11 @@ const Navbar = () => {
             Fake<span>store</span>
           </h1>
         </Link>
-        <button className="nav-toggle" onClick={toggleLinks}>
-          <FaBars />
+        <button
+          className={`${showLinks ? "nav-toggle show" : "nav-toggle"}`}
+          onClick={toggleLinks}
+        >
+          {showLinks ? <FaTimes /> : <FaBars />}
         </button>
       </div>
       <div className="links-container" ref={linksContainerRef}>

@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import SingleProduct from "./pages/SingleProduct";
 import Error from "./pages/Error";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Error />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
