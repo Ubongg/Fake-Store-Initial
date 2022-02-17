@@ -39,9 +39,9 @@ const SingleProduct = () => {
     <div>
       {data && (
         <div className="single-product">
-          <Link to="/products" className="back-btn">
-            back to products
-          </Link>
+          <button className="back-btn">
+            <Link to="/products">back to products</Link>
+          </button>
           <div className="section">
             <div className="col">
               <div className="single-img-bx">
