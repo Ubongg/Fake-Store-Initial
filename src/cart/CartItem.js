@@ -10,7 +10,7 @@ const CartItem = ({ item }) => {
     <article className="cart-item">
       <img src={image} alt={title} />
       <div className="item-details">
-        <h4>{`${title.substring(0, 20)}...`}</h4>
+        <h4 className="item-title">{`${title.substring(0, 20)}...`}</h4>
         <h4 className="item-price">${price}</h4>
         {/* remove button */}
         <button className="remove-btn" onClick={() => removeProduct(id)}>

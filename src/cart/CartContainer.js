@@ -26,6 +26,7 @@ const CartContainer = () => {
       {/* cart header */}
       <header>
         <h2>your bag</h2>
+        <div className="cart-underline"></div>
       </header>
       {/* cart items */}
       <div>
@@ -42,9 +43,9 @@ const CartContainer = () => {
           </h4>
         </div>
         <div className="footer-btns">
-          <Link className="to-cart" to="/products">
-            continue shopping
-          </Link>
+          <button className="to-cart">
+            <Link to="/products">continue shopping</Link>
+          </button>
           <button className="btn clear-btn" onClick={() => setCart([])}>
             clear cart
           </button>

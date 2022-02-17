@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 const Error = () => {
   return (
     <div className="error">
-      <h1>you've reached a dead end</h1>
+      <h2>you've reached a dead end</h2>
+      <p>you need to go back real quick</p>
       <button>
         <Link to="/">back home</Link>
       </button>

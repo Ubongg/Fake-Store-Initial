@@ -52,10 +52,9 @@ const SingleProduct = () => {
               <h2>{title}</h2>
               <h3>${price}</h3>
               <p>{description}</p>
-              <button onClick={() => addCart(data)}>add to cart</button>
-              <Link className="to-cart" to="/cart">
-                go to cart
-              </Link>
+              <button onClick={() => addCart(data)}>
+                <Link to="/cart">add to cart</Link>
+              </button>
             </div>
           </div>
         </div>

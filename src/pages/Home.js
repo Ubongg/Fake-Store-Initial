@@ -80,7 +80,7 @@ const Home = () => {
               dignissimos ea nam veritatis natus veniam amet reprehenderit non,
               aperiam modi!
             </p>
-            <h3>someone famous</h3>
+            <h3>someone somewhere</h3>
           </div>
           <div className="review-box">
             <div className="imgBx">
@@ -91,7 +91,7 @@ const Home = () => {
               dignissimos ea nam veritatis natus veniam amet reprehenderit non,
               aperiam modi!
             </p>
-            <h3>someone famous</h3>
+            <h3>someone somewhere</h3>
           </div>
           <div className="review-box">
             <div className="imgBx">
@@ -102,7 +102,7 @@ const Home = () => {
               dignissimos ea nam veritatis natus veniam amet reprehenderit non,
               aperiam modi!
             </p>
-            <h3>someone famous</h3>
+            <h3>someone somewhere</h3>
           </div>
         </div>
       </div>
