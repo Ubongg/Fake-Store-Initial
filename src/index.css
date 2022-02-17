@@ -317,7 +317,6 @@ li {
 .footer {
   background: var(--mainBlack);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 15px;
